@@ -1,7 +1,5 @@
 import { Observable, Subject } from "rxjs"
 import { SuperSetData } from "./SuperSetData"
-import { config } from "@config"
-import { IGlobalData } from "@/app"
 
 /**
  * 组件关系类型
@@ -65,19 +63,8 @@ export class SuperComponent<T> extends SuperSetData<T> implements Component.Comp
   }
 
   public created(): void {
-    const app = getApp() as App.AppInstance<{}> & { globalData: IGlobalData }
     this.unloadSubject = new Subject<any>()
     this.unloadObservable = this.unloadSubject.asObservable()
-    // created 里面 setData 无效，如果不加setTimeout数据就渲染不出来
-    setTimeout(() => {
-      this.setData({
-        resHost: config.resHost,
-        uploadHost: config.uploadHost,
-        navHeight: app.globalData.navHeight,
-        system: app.globalData.system,
-        isIPhoneX: app.globalData.isIPhoneX || false,
-      } as any)
-    })
   }
 
   public attached(): void {}
