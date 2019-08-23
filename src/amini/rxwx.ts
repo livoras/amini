@@ -8,29 +8,27 @@ const noConvertApiList = ["getUpdateManager", "nextTick"]
 
 type wxType = typeof wx
 type wxKeys = keyof Omit<wxType, "cloud">
-type wxApiOptions<T extends wxKeys> = Parameters<wxType[T]>  [0]
+type wxApiOptions<T extends wxKeys> = Parameters<wxType[T]>[0]
 
-// tslint:disable-next-line:max-line-length
 type wxApiSuccessParams<T extends wxKeys> = wxApiOptions<T> extends {
   success?: (params: infer S) => void,
   fail?: (params: infer F) => void,
   complete?: (params: infer C) => void,
 } ? S : never
-// tslint:disable-next-line:max-line-length
-export type rxwx = {[x in wxKeys]: (params: wxApiOptions<x>) => Observable<wxApiSuccessParams<x>>} & IRxwxCustomApi
+export type Rxwx = {[x in wxKeys]: (params: wxApiOptions<x>) => Observable<wxApiSuccessParams<x>>} & IRxwxCustomApi
 
 interface IRxwxCustomApi {
   /** 已经转换 */
   hasInit: boolean
   /** 禁止转换的 wx api */
-  noConvert(...keys: Array<keyof wx.WX>): void
+  noConvert(...keys: Array<keyof wx.Wx>): void
   /** 转换api */
   init(): void
 }
 
-export const rxwx = {
+export const rxwx: Rxwx = {
   hasInit: false,
-  noConvert(...keys: Array<keyof wx.WX>): void {
+  noConvert(...keys: Array<keyof wx.Wx>): void {
     keys.forEach((key) => {
       rxwx[key] = wx[key]
       noConvertApiList.push(key)
@@ -63,7 +61,7 @@ export const rxwx = {
       }
     })
   },
-} as rxwx
+}
 
 // showToast 的 success 不是 toast 隐藏后触发，而是调用成功后就触发，需要另外修改
 rxwx.noConvert("showToast")

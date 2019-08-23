@@ -10,20 +10,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 /// <reference path="./lib.wa.es6.d.ts" />
 /// <reference path="./wx/index.d.ts" />
-
-interface WXTarget {
-  id: string;
-  dataset: any;
-  offsetLeft: number;
-  offsetTop: number;
-}
-
-/** 微信绑定事件的回调 */
-interface WXEvent {
-  detail: any;
-  currentTarget: WXTarget;
-  target: WXTarget;
-  type?: string;
-  timeStamp?: number;
-  touches?: any[];
-}

@@ -53,7 +53,8 @@ export interface IBaseComponentData {
  * 小程序组件基类
  * 最新的依赖注入框架可以使组件也能够初始化非官方属性
  */
-export class SuperComponent<T> extends SuperSetData<T> implements Component.ComponentInstance<T> {
+export class SuperComponent<T> extends SuperSetData<T> implements BaseComponent {
+  public is: string
   public data: T = {} as T
   protected unloadObservable?: Observable<any>
   private unloadSubject?: Subject<any>

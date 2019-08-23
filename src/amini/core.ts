@@ -23,7 +23,7 @@ export const wxPage = (options?: any): AcceptClassFunction => (PageClass: IClass
  * 除了组件生命周期，所有方法都需要定义在 methods 里才能使用
  * @param options
  */
-export const wxComponent = (options?: any): AcceptClassFunction => (ComponentClass: IClass): void => {
+export const BaseComponent = (options?: any): AcceptClassFunction => (ComponentClass: IClass): void => {
   removeFakeSetDataOnProto(ComponentClass)
   // checkInheritance(SuperComponent, ComponentClass)
   const component = new ComponentClass(...getDependenciesOfService(ComponentClass))
@@ -59,7 +59,7 @@ function injectMethodsAndLifetimes(component: any): void {
 }
 
 /** 组件官方属性 */
-const compPropertyKeys: Array<keyof Component.ComponentInstance> = [
+const compPropertyKeys: Array<keyof BaseComponent> = [
   "externalClasses",
   "behaviors",
   "relations",
@@ -70,7 +70,6 @@ const compPropertyKeys: Array<keyof Component.ComponentInstance> = [
   "pageLifetimes",
   "definitionFilter",
   "options",
-  "setData",
 ]
 
 /** 标记是否依赖注入的服务，用于判断属性是否需要被深复制 */
@@ -80,7 +79,7 @@ const isService = Symbol("is service")
  * 组件class 的非官方属性在小程序注册时都会被清除，为了使用依赖注入，要做适配，
  * 将自定义属性储存起来，created 的时候释放出来
  */
-function cacheCustomProp(obj: Component.ComponentInstance): Component.ComponentInstance {
+function cacheCustomProp(obj: BaseComponent): BaseComponent {
   // FIXME: 注意是否会内存泄漏
   // 非依赖注入的对象都需要使用深复制，避免同一个组件的多个实例共享属性
   const customProperties = {}
@@ -97,7 +96,7 @@ function cacheCustomProp(obj: Component.ComponentInstance): Component.ComponentI
   })
   const originCreated = obj.created
   // 组件会创建不同的实例，而这些实例是没有自定义属性的，所以每次都要赋值给 this
-  const newCreated = function(this: Component.ComponentInstance): void {
+  const newCreated = function(this: BaseComponent): void {
     Object.assign(this, customProperties)
     if (typeof originCreated === "function") { originCreated.call(this) }
     // 给 this 赋值 created 无效
@@ -105,13 +104,6 @@ function cacheCustomProp(obj: Component.ComponentInstance): Component.ComponentI
   obj.lifetimes = Object.assign(obj.lifetimes || {}, { created: newCreated })
   obj.created = newCreated
   return obj
-}
-
-/** 微信小程序定义 Behavior 装饰器 */
-export const wxBehavior = (options?: any): AcceptClassFunction => (BehaviorClass: IClass): void => {
-  removeFakeSetDataOnProto(BehaviorClass)
-  const behavior = new BehaviorClass(...getDependenciesOfService(BehaviorClass))
-  return Behavior(convertInstanceToRawObject(behavior))
 }
 
 /**
