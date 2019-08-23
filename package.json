@@ -2,10 +2,11 @@
   "name": "amini",
   "version": "1.0.0",
   "description": "Amini 是一个 Angular 风格的微信小程序开发库",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc -w"
   },
+  "types": "src/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/livoras/Amini.git"
