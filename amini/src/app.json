@@ -1,0 +1,341 @@
+{
+  "pages": [
+    "pages/homepage/customer-homepage/customer-homepage",
+    "pages/homepage/group-homepage/group-homepage",
+    "pages/homepage/landing-page/landing-page",
+    "pages/nav/nav",
+    "pages/before-login/before-login",
+    "pages/qc-code-route/qc-code-route",
+    "pages/authorization/authorization",
+    "pages/page-auth/page-auth",
+    "pages/textarea-edit/textarea-edit",
+    "pages/web-view-page/web-view-page",
+    "pages/offline-payment/offline-payment"
+  ],
+  "subpackages": [
+    {
+      "root": "pages/customer-service",
+      "pages": [
+        "chat-page/chat-page",
+        "message-list/message-list",
+        "course-detail/course-detail",
+        "chat-setting/chat-setting",
+        "chat-fast-reply/fast-reply-warehouse/fast-reply-warehouse",
+        "chat-fast-reply/edit-content/edit-content",
+        "chat-fast-reply/edit-category/edit-category"
+      ]
+    },
+    {
+      "root": "pages/seq-game",
+      "pages": [
+        "seq-game-landing-page/seq-game-landing-page",
+        "seq-game-audit-page/seq-game-audit-page",
+        "seq-game-star-leader-list/seq-game-star-leader-list",
+        "invite-become-sponsor/invite-become-sponsor",
+        "sponsor-edit-info/sponsor-edit-info",
+        "seq-game-group-help-sale/seq-game-group-help-sale",
+        "seq-game-statistics/seq-game-statistics",
+        "my-seq-game/my-seq-game",
+        "recommend-leader-statistics/recommend-leader-statistics"
+      ]
+    },
+    {
+      "root": "pages/seq-publish",
+      "pages": [
+        "copy-seq/copy-seq",
+        "publish-start-group/publish-start-group",
+        "customer-service-phone/customer-service-phone",
+        "seq-bonus/seq-bonus",
+        "seq-game-bonus/seq-game-bonus",
+        "tiered-price/tiered-price",
+        "product-warehouse/product-warehouse",
+        "product-category/product-category",
+        "product-setting/more-setting-intro/more-setting-intro",
+        "product-setting/product-more-size/product-more-size",
+        "product-setting/product-setting",
+        "edit-product/edit-product",
+        "market-product-management/market-product-management",
+        "more-read-template/more-read-template",
+        "select-share-mode/select-share-mode",
+        "select-pickup-location/select-pickup-location",
+        "select-pickup-location-old/select-pickup-location-old",
+        "select-money-off/select-money-off",
+        "select-money-off/money-off-rules/money-off-rules",
+        "select-customer-info/select-customer-info",
+        "select-customer-info/customer-custom-info/customer-custom-info",
+        "select-publish-type/select-publish-type",
+        "select-leader-help/select-leader-help",
+        "select-promoters/select-promoters",
+        "select-leader-help-leaders/select-leader-help-leaders",
+        "select-star-leader/select-star-leader",
+        "set-share-poster/set-share-poster",
+        "publish-expression/publish-expression",
+        "region-selector/region-selector"
+      ]
+    },
+    {
+      "root": "pages/data-analyse",
+      "pages": [
+        "data-analyse",
+        "data-analyse-leader/data-analyse-leader",
+        "daily-report/daily-report"
+      ]
+    },
+    {
+      "root": "pages/home",
+      "pages": [
+        "audit-leader/audit-leader",
+        "home/brand-home/brand-home",
+        "home/customer-home/customer-home",
+        "home/leader-home/leader-home",
+        "home/leader-home/recommend-leader/recommend-leader",
+        "home/customer-profile/customer-profile",
+        "home/customer-profile/customer-info-edit/customer-info-edit",
+        "home/customer-profile/customer-voucher-edit/customer-voucher-edit",
+        "create-homepage/homepage-introduce/homepage-introduce",
+        "home/customer-profile/total-data-statistics/total-data-statistics",
+        "home/customer-profile/agent-qr-code/agent-qr-code",
+        "home/community-home/community-home",
+        "home/community-home/member-management/member-management",
+        "invite-leader-award/invite-leader-award",
+        "leaders-management/leaders-management",
+        "user-list/user-list",
+        "logistics-track/logistics-track",
+        "fans-management/fans-management",
+        "fans-management-new/fans-management-new",
+        "fans-management/fans-invite-manager/fans-invite-manager",
+        "fans-remark/fans-remark",
+        "home/circles-home/circles-home",
+        "home/circles-home/circles-member/circles-member",
+        "home/circles-home/circles-invite/circles-invite",
+        "home/circles-home/circles-poster/circles-poster",
+        "home/circles-home/circles-detail/circles-detail",
+        "home/circles-home/circles-progress/circles-progress",
+        "home/circles-home/circles-light-invite/circles-light-invite",
+        "home/circles-home/circles-nickname-edit/circles-nickname-edit",
+        "home/home-other-browse/home-other-browse",
+        "home/seq-case-list/seq-case-list",
+        "fans-pick-point/fans-pick-point",
+        "create-homepage/create-homepage",
+        "sign-admin-manage/sign-admin-manage",
+        "sign-admin-manage/sign-activity-detail/sign-activity-detail",
+        "homepage/home-poster-page/home-poster-page",
+        "homepage/act-search-page/act-search-page",
+        "homepage/homepage-brand-home/homepage-brand-home",
+        "homepage/homepage-leader-home/homepage-leader-home",
+        "homepage/homepage-association-home/homepage-association-home",
+        "homepage/customer-profile/customer-profile",
+        "homepage/my-publish/my-publish",
+        "homepage/home-tag-settings/home-tag-settings",
+        "homepage/home-tag-settings/group-buy-power-description/group-buy-power-description",
+        "homepage/home-tag-settings/home-category-tag-list/home-category-tag-list",
+        "group-help-sale/group-help-sale",
+        "group-help-sale/help-sale-leader-list/help-sale-leader-list",
+        "group-help-sale/help-sale-leader-management/help-sale-leader-management",
+        "brand-help/brand-help",
+        "brand-help/my-brand-list/my-brand-list",
+        "user-analyse/user-analyse",
+        "leader-recommend/leader-recommend",
+        "leader-recommend/leader-relation-pay/leader-relation-pay",
+        "leaders-nearby/leaders-nearby",
+        "leaders-search/leaders-search",
+        "user-information/user-information"
+      ]
+    },
+    {
+      "root": "pages/profile",
+      "pages": [
+        "authority-management/authority-management",
+        "authority-management/detail/detail",
+        "edit/edit",
+        "brief-introduction-edit/brief-introduction-edit",
+        "help/help",
+        "my-brand/my-brand",
+        "my-brand-activity/my-brand-activity",
+        "agreement/agreement",
+        "authority-management/become-brand-admin/become-brand-admin",
+        "homepage-settings/homepage-settings",
+        "commander-zone-pay/commander-zone-pay",
+        "commander-zone-pay/page-introduction/page-introduction",
+        "set-leader-wechat-id/set-leader-wechat-id",
+        "my-brand-become-supplier/my-brand-become-supplier",
+        "homepage-bg-set/homepage-bg-set",
+        "open-fans-share-tag/open-fans-share-tag",
+        "my-brand-invite/my-brand-invite",
+        "embed-public-account/embed-public-account",
+        "customer-message-settings/customer-message-settings",
+        "modify-permission/modify-permission",
+        "administrator-setting/administrator-setting"
+      ]
+    },
+    {
+      "root": "pages/seq-detail",
+      "pages": [
+        "my-commission/my-commission",
+        "community-moment-detail/community-moment-detail",
+        "detail-start-group/detail-start-group",
+        "detail-go-group-buy/detail-go-group-buy",
+        "detail-sign-up/detail-sign-up",
+        "detail-together-buy/detail-together-buy",
+        "detail-together-buy-v2/detail-together-buy-v2",
+        "detail-join-together-buy/detail-join-together-buy",
+        "detail-interact/detail-interact",
+        "detail-read/detail-read",
+        "detail-elect/detail-elect",
+        "detail-fee/detail-fee",
+        "detail-market/detail-market",
+        "detail-mutual-sale-parent/detail-mutual-sale-parent",
+        "detail-mutual-sale-child/detail-mutual-sale-child",
+        "detail-form/detail-form",
+        "generate-order/generate-order",
+        "pickup-location-list/pickup-location-list",
+        "detail-group-buy/detail-group-buy",
+        "detail-guest-mode/detail-guest-mode",
+        "come-user/come-user",
+        "user-dynamic/user-dynamic",
+        "sign-user/sign-user",
+        "sign-user-partial/sign-user-partial",
+        "sign-management/sign-management",
+        "user-portrait/user-portrait",
+        "voucher-management/voucher-management",
+        "voucher-management-detail/voucher-management-detail",
+        "operation-result/operation-result",
+        "detail-reward/detail-reward",
+        "check-success/check-success",
+        "detail-reward-leader/detail-reward-leader",
+        "search-voucher-order/search-voucher-order",
+        "together-buy-tiered-price/together-buy-tiered-price",
+        "together-buy-voucher-detail/together-buy-voucher-detail",
+        "act-operate-log/act-operate-log",
+        "activity-statistic-new/activity-statistic-new",
+        "activity-statistic-new/received-reward/received-reward",
+        "income-not-arrival/income-not-arrival",
+        "voucher-management-v3/voucher-management-v3",
+        "detail-dynamic/detail-dynamic",
+        "express-help/express-help",
+        "express-upload/express-upload",
+        "order-refund/order-refund"
+      ]
+    },
+    {
+      "root": "pages/save-img",
+      "pages": [
+        "save-img"
+      ]
+    },
+    {
+      "root": "pages/play-video",
+      "pages": [
+        "play-video"
+      ]
+    },
+    {
+      "root": "pages/order",
+      "pages": [
+        "money-pending-receive/brand-pending-payment/brand-pending-payment",
+        "money-pending-receive/leader-pending-commission/leader-pending-commission",
+        "money-pending-receive/select-act/select-act",
+        "brand-order-list/brand-order-list",
+        "leader-order-list/leader-order-list",
+        "customer-order-list/customer-order-list",
+        "leader-refund-list/leader-refund-list",
+        "order-detail/order-detail",
+        "notify-customer-list/notify-customer-list",
+        "select-pickup-time/select-pickup-time",
+        "customer-receipt/customer-receipt",
+        "order-logistics/order-logistics",
+        "customer-voucher/customer-voucher"
+      ]
+    },
+    {
+      "root": "pages/account-management",
+      "pages": [
+        "account-management",
+        "recharge/recharge",
+        "withdraw/withdraw",
+        "bill-list/bill-list",
+        "bill-detail/bill-detail",
+        "offline-bill-info/offline-bill-info",
+        "bank-card-management/bank-card-management",
+        "send-award/send-award",
+        "send-award-seq-list/send-award-seq-list",
+        "send-award-market/send-award-market",
+        "bank-card-list/bank-card-list",
+        "withdraw-detail/withdraw-detail",
+        "success-page/success-page",
+        "secondary-merchant-bank-card/secondary-merchant-bank-card",
+        "create-merchant-2/create-merchant-2",
+        "refund-result/refund-result",
+        "community-store/open-offline-collection/open-offline-collection",
+        "community-store/submit-information/submit-information",
+        "community-store/audit-result/audit-result",
+        "community-store/offline-payment-code/offline-payment-code"
+      ]
+    },
+    {
+      "root": "pages/pickup-management",
+      "pages": [
+        "pickup-management",
+        "invite-leader/invite-leader",
+        "invite-leader-share/invite-leader-share",
+        "pickup-create/pickup-create",
+        "pickup-detail/pickup-detail",
+        "become-leader/become-leader"
+      ]
+    },
+    {
+      "root": "pages/verify-identity",
+      "pages":[
+        "verify-identity",
+        "verify_mpsdk/index/index",
+        "agreement/agreement",
+        "agreement/user-info-authorization/user-info-authorization",
+        "verify-h5/verify-h5"
+      ]
+    },
+    {
+      "root": "pages/util-pages",
+      "pages":[
+        "search-and-select-page/search-and-select-page",
+        "no-rights-prompt/no-rights-prompt",
+        "error-page/error-page"
+      ]
+    },
+    {
+      "root": "pages/order-manage",
+      "pages": [
+        "homepage-order-manage/homepage-order-manage",
+        "order-refund/order-refund",
+        "voucher-management-v3/voucher-management-v3",
+        "voucher-management-detail/voucher-management-detail",
+        "operation-result/operation-result",
+        "express-help/express-help",
+        "express-upload/express-upload"
+      ]
+    },
+    {
+      "root": "pages/public-pages",
+      "pages": [
+        "address-library/address-library"
+      ]
+    }
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "downloadFile": 20000
+  },
+  "debug": false,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用于获取当前位置，及查找附近提货点"
+    }
+  }
+}

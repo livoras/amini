@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "___title___",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "page-wrapper": "/pages/components/page-wrapper/page-wrapper",
+    "navbar": "/pages/components/navbar/navbar"
+  }
+}

@@ -1,27 +1,46 @@
 {
-  "name": "amini",
-  "version": "1.0.0",
-  "description": "Amini 是一个 Angular 风格的微信小程序开发库",
-  "main": "src/index.js",
+  "name": "root",
+  "private": true,
   "scripts": {
-    "start": "tsc -w"
+    "tslint": "tslint -c tslint.json './packages/**/*.ts'",
+    "update:template": "git subtree pull --prefix=packages/mini http://git.shangshi360.com/wangwenjie/qunjielong-mini-boilerplate.git dev",
+    "swagger": "ts-node ./scripts/get-swagger-service-file.ts && ts-node ./scripts/unzip-copy-monoshare.ts"
   },
-  "types": "src/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/livoras/Amini.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/livoras/Amini/issues"
-  },
-  "homepage": "https://github.com/livoras/Amini#readme",
   "devDependencies": {
-    "rxjs": "^6.5.2",
-    "tslint": "^5.18.0",
+    "@commitlint/cli": "^7.4.0",
+    "@commitlint/config-conventional": "^7.3.1",
+    "@types/adm-zip": "^0.4.32",
+    "@types/fs-extra": "^5.0.5",
+    "@types/node": "^11.13.4",
+    "adm-zip": "^0.4.13",
+    "ava": "^1.4.1",
+    "cz-customizable": "^5.3.0",
+    "del": "^4.1.0",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.0",
+    "gulp-art-template4-enhanced": "^1.0.4",
+    "husky": "^1.3.1",
+    "lerna": "^3.13.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.15.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-sonarts": "^1.9.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.9.7",
+    "wxml-transformer": "^0.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "dependencies": {
+    "@angular/core": "^7.2.12",
+    "fs-extra": "^7.0.1",
+    "rxjs": "^6.4.0"
   }
 }

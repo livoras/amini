@@ -2,15 +2,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "*": ["types/*"],
-      // "@angular/core": ["src/amini/core"],
-      // "@angular/forms": ["src/amini/forms"],
-      // "@angular/forms/*": ["srcamini/forms/*"],
-      // "@core/*": ["src/*"],
-      // "@config": ["src/environments/config.dev"],
-      // "@/*": ["src/*"]
-    },
+    "paths": { "*": ["types/*"] },
+    "strict": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -19,14 +12,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noEmitHelpers": true,
-    "noFallthroughCasesInSwitch": true,
     "importHelpers": true,
-    "declaration": true,
+    "downlevelIteration": true,
     "module": "commonjs",
     "target": "es5",
     "lib": [
-      "es7",
+      "es2017",
       "dom"
-    ],
-  },
+    ]
+  }
 }
+

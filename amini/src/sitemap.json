@@ -1,0 +1,11 @@
+{
+  "desc": "关于本文件的更多信息，请参考文档 https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html",
+  "rules": [{
+      "action": "disallow",
+      "page": "pro/pages/customer-service/message-list/message-list"
+    }, {
+      "action": "disallow",
+      "page": "pro/pages/customer-service/chat-page/chat-page"
+    }
+  ]
+}

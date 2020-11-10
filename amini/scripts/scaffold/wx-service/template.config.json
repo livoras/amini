@@ -1,0 +1,6 @@
+{
+  "name": "wx-service",
+  "variables": [
+    "fileName"
+  ]
+}

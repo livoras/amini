@@ -11,6 +11,12 @@ Amini 是一个 Angular 风格的微信小程序开发库
 5. RouterService 进行页面跳转
 6. @Lock、@DataBind、@Debounce、@Throttle 等系列装饰器提高效率
 7. 局部 setData 方案
+8. 提供 computed 计算属性
+9. 可选的:
+   1. Form 表单管理
+   2. DataList 分页管理
+   3. VirtualList 无限列表
+   4. Draggable 拖拽控制
 
 Example：
 

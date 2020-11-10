@@ -9,20 +9,51 @@
     "no-var-requires": false,
     "no-implicit-dependencies": false,
     "no-ignored-return": false,
-    "no-dead-store": {"severity": "warning"},
+    "no-dead-store": { "severity": "warning" },
     "object-curly-spacing": [true, "always"],
-    "max-line-length": [true, {"limit": 120, "ignore-pattern": "^import |^export {(.*?)}"}],
-    "trailing-comma": [true, {"multiline": "always"}],
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "^import |^export {(.*?)}",
+        "check-strings": true,
+        "check-regex": true
+      }
+    ],
+    "trailing-comma": [true, { "multiline": "always" }],
     "max-file-line-count": [true, 600],
     "no-big-function": [true, 60],
     "ter-indent": [true, 2],
+    "indent": [true, "spaces", 2],
     "no-commented-code": false,
     "no-redundant-boolean": true,
-    "typedef": [true, "call-signature", "arrow-call-signature", "parameter", "property-declaration"]
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "property-declaration"
+    ]
   },
   "linterOptions": {
     "exclude": [
-      "**/packages/**/*spec.ts*"
+      "packages/mini/src/pages/services/route.service.ts",
+      "**/packages/**/node_modules/**",
+      "**/packages/**/typings/**",
+      "**/packages/**/vendors/**",
+      "**/packages/**/rxjs/**",
+      "**/packages/**/_cli-tpl/**",
+      "**/packages/**/e2e/**",
+      "**/packages/**/dist/**",
+      "**/packages/**/*spec.ts*",
+      "**/packages/**/scripts/scaffold/**/*.ts",
+      "**/packages/**/**swagger-service/**",
+      "**/packages/**/swagger-services/**",
+      "**/packages/**/src/mono-shared/**",
+      "**/packages/**/scripts/**",
+      "**/libs/async-mqtt.ts",
+      "**/gulpfile.js",
+      "packages/qjl-h5/src/typings.d.ts"
     ]
   }
 }

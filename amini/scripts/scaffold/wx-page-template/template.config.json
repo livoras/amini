@@ -1,0 +1,24 @@
+{
+  "name": "wx-page",
+  "variables": [
+    "fileName",
+    "className",
+    {
+      "name": "title",
+      "style": {
+          "noTransformation": true
+      }
+    },
+    {
+      "name": "describe",
+      "style": {
+        "noTransformation": true
+      }
+    },
+    {
+      "name": "json-suffix",
+      "defaultValue": "json"
+    }
+  ]
+
+}

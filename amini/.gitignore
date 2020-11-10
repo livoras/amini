@@ -1,0 +1,20 @@
+.svn
+.idea
+.vscode
+.DS_Store
+
+dist
+
+mono-shared
+src/pages/services/route.service.ts
+.gulpfile_last_modify
+
+# 忽略配置文件
+project.config.json
+src/config.ts
+src/environments/config.custom.ts
+
+
+node_modules
+yarn.lock
+package-lock.json

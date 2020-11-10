@@ -1,0 +1,68 @@
+{
+  "description": "项目配置文件。",
+  "miniprogramRoot": "dist/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "enhance": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.10.4",
+  "appid": "wx7d1304df49306ae4",
+  "projectname": "mono-%E7%BE%A4%E6%8E%A5%E9%BE%992",
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "suffix",
+        "value": ".ts"
+      },
+      {
+        "type": "regexp",
+        "value": "^((?!pageframe\\.html).)+\\.html$"
+      },
+      {
+        "type": "folder",
+        "value": "node_modules"
+      },
+      {
+        "type": "folder",
+        "value": ".idea"
+      },
+      {
+        "type": "folder",
+        "value": ".svn"
+      },
+      {
+        "type": "folder",
+        "value": ".git"
+      },
+      {
+        "type": "file",
+        "value": "package-lock.json"
+      },
+      {
+        "type": "file",
+        "value": "yarn-lock.json"
+      },
+      {
+        "type": "file",
+        "value": "package.json"
+      },
+      {
+        "type": "file",
+        "value": "tslint.json"
+      },
+      {
+        "type": "file",
+        "value": "tsconfig.json"
+      },
+      {
+        "type": "folder",
+        "value": "scripts"
+      }
+    ]
+  }
+}

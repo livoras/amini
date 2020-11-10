@@ -1,0 +1,12 @@
+{
+  "name": "wx-component",
+  "variables": [
+    "fileName",
+    "className",
+    {
+      "name": "json-suffix",
+      "defaultValue": "json"
+    }
+  ]
+
+}

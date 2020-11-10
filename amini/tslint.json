@@ -1,0 +1,16 @@
+{
+  "extends": ["../../tslint.json"],
+  "linterOptions": {
+    "exclude": [
+      "./src/pages/services/route.service.ts",
+      "./node_modules/**/*.ts",
+      "./scripts/**",
+      "./**/mono-shared/**/*.*",
+      "./**/*spec.ts*",
+      "./**/*gulpfile.ts*",
+      "./**/*.d.ts",
+      "./vendors/**/*.ts",
+      "./src/environments/*.ts"
+    ]
+  }
+}
