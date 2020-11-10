@@ -3,6 +3,15 @@ Amini 是一个 Angular 风格的微信小程序开发库
 
 **NOTE**：该项目正在积极的开发当中，代码和文档将逐渐完善，暂时请勿使用。
 
+## Features
+1. 强制使用 TypeScript 进行开发
+2. 兼容 Angular 的依赖注入方式
+3. 使用 rx.js
+4. Mixin 方式进行页面逻辑复用
+5. RouterService 进行页面跳转
+6. @Lock、@DataBind、@Debounce、@Throttle 等系列装饰器提高效率
+7. 局部 setData 方案
+
 Example：
 
 ```typescript
